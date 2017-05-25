@@ -248,7 +248,7 @@ class GeneticAlgorithm:
 				while parent2 == parent1:
 					parent2 = parents[randint(0, self.parentCount - 1)]
 				
-				child = Organism.getChild(parent1, parent1, self.mutationRate)
+				child = Organism.getChild(parent1, parent2, self.mutationRate)
 				self.population.append (child)
 			
 			self.generation += 1
